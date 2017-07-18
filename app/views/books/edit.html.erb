@@ -2,6 +2,8 @@
   <h2>Kitabı Düzenle</h2>
   <%= simple_form_for @book, :html =>{ :multipart =>true}  do |f| %>
       <%= f.select :category_id, @categories %>
+      <p></p>
+      <%= f.file_field :book_img %>
       <%= f.input :name,label: "Kitabın Adı" %>
       <%= f.input :author,label: "Yazar" %>
       <%= f.input :page_count,label: "Sayfa Sayısı" %>

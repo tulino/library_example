@@ -13,11 +13,13 @@ gem 'sqlite3'
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3'
+
 gem 'jquery-rails'
 gem 'jquery', '~> 0.0.1'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form', '~> 3.5'
 gem 'devise', '~> 4.3'
+gem 'paperclip', '~> 5.1'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
