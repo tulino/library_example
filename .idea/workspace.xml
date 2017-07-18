@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="693f0e46-b5a0-406c-be13-b6fa4511c939" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/books/book_imgs/000/000/001/book_index/vonnegut.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/books/book_imgs/000/000/001/book_show/vonnegut.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/books/book_imgs/000/000/001/original/vonnegut.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/books/book_imgs/000/000/002/book_index/aylakadam.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/books/book_imgs/000/000/002/book_show/aylakadam.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/books/book_imgs/000/000/002/original/aylakadam.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/books/book_imgs/000/000/003/book_index/linux.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/books/book_imgs/000/000/003/book_show/linux.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/system/books/book_imgs/000/000/003/original/linux.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20170718132222_add_attachment_book_img_to_books.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Library.iml" afterPath="$PROJECT_DIR$/.idea/Library.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -657,12 +667,12 @@
       <workItem from="1500280283169" duration="19602000" />
       <workItem from="1500315266468" duration="7623000" />
       <workItem from="1500355993216" duration="10973000" />
-      <workItem from="1500379408156" duration="9445000" />
+      <workItem from="1500379408156" duration="9511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109598000" />
+    <option name="totallyTimeSpent" value="109664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="37" y="-4" width="1329" height="772" extended-state="6" />
