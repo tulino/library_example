@@ -1,0 +1,6 @@
+<div class="container">
+  <% @deposits.each do |deposit| %>
+      <h2><%= link_to deposit.deposit_date,deposit_path(deposit) %></h2>
+
+  <% end %>
+</div>

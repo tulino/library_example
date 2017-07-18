@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>Kitabı Düzenle</h2>
+  <%= simple_form_for @deposit do |f| %>
+      <h4>Emanet Tarihi</h4>
+      <%= f.date_select :deposit_date%>
+      <h4>Son Teslim Tarihi</h4>
+      <%= f.date_select :deadline %>
+      <h4>Teslim Tarihi</h4>
+      <%= f.date_select :due_date  %>
+      <p>
+      <h4>Üye Adı:</h4>
+      </p>
+      <li><%= select_tag(:user_id, options_for_select(@users),:promtpt => "Kullanıcı") %></li>
+      <p><h4>Kitap Adı:</h4></p>
+      <li><%= select_tag(:book_id, options_for_select(@books),:promtpt => "Kitap") %></li>
+      <p></p>
+      <%= f.button :submit %>
+  <% end %>
+  <%= link_to "Geriye Dön",deposits_path %>
+</div>

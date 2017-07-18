@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>Category Listesi</h2>
+
+  <table style="width:85%" >
+
+    <% @categories.each do |category| %>
+        <tr>
+          <h3> <td><%= link_to category.name, category_path(category) %></td></h3>
+        </tr>
+
+    <% end %>
+  </table>
+
+  <p>
+  </p>
+</div>

@@ -1,0 +1,6 @@
+<div class="container">
+  <h3>Category Adı: <%= @category.name %></h3>
+  <%= link_to "Geriye Dön",categories_path %>
+  <%= link_to "Düzenle", edit_category_path(@category) %>
+  <%= link_to "Sil",category_path(@category), method: :delete, data:{confirm: "Emin misiniz?"}%>
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+  <h3>Ad: <%= @user.first_name %></h3>
+  <h3>Soyad: <%= @user.last_name %></h3>
+  <h3>Telefon Numarası: <%= @user.phone_number %></h3>
+  <h3>Eposta Hesabı: <%= @user.email %></h3>
+  <%= link_to "Geriye Dön",users_path %>
+  <%= link_to "Düzenle", edit_user_path(@user) %>
+  <%= link_to "Sil",user_path(@user), method: :delete, data:{confirm: "Emin misiniz?"}%>
+</div>

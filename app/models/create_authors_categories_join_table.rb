@@ -1,0 +1,2 @@
+class CreateAuthorsCategoriesJoinTable < ApplicationRecord
+end

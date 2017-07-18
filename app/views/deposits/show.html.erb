@@ -1,0 +1,11 @@
+<div class="container">
+  <h3>Emanet Tarihi: <%= @deposit.deposit_date %></h3>
+  <h4>Son Getirme Tarihi: <%= @deposit.deadline %></h4>
+  <h4>Alan Üye : <%= User.find(@deposit.user_id).first_name+" "+User.find(@deposit.user_id).last_name %></h4>
+  <h4>Alınan Kitap : <%= Book.find(@deposit.book_id).name+"\n Yazarı: "+Book.find(@deposit.book_id).author %></h4>
+  <h4>Teslim tarihi: <%= @deposit.due_date %></h4>
+  <%= link_to "Geriye Dön",deposits_path %>
+  <%= link_to "Düzenle", edit_deposit_path(@deposit) %>
+  <%= link_to "Sil",deposit_path(@deposit), method: :delete, data:{confirm: "Emin misiniz?"}%>
+
+</div>

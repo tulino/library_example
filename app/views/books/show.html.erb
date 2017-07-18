@@ -1,0 +1,12 @@
+
+<div class="container">
+  <h3>Kitabın Adı: <%= @book.name%></h3>
+  <h4>Yazarı: <%= @book.author %></h4>
+  <h4>Category: <%= @book.category.name %></h4>
+  <h4>Sayfa sayısı: <%= @book.page_count %></h4>
+  <h4>Bulunma Durmu: <%= @book.state %></h4>
+  <%= link_to "Geriye Dön",root_path %>
+  <%= link_to "Düzenle", edit_book_path(@book) %>
+  <%= link_to "Sil",book_path(@book), method: :delete, data:{confirm: "Emin misiniz?"}%>
+
+</div>
