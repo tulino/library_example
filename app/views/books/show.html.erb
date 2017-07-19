@@ -7,20 +7,46 @@
     <div class="col-md-8">
       <h3>Kitabın Adı: <%= @book.name%></h3>
       <h4>Yazarı: <%= @book.author %></h4>
+      <h2>Ortalama Puanı</h2>
+      <div class="average-review-rating" data-score=<%= @average_review %>>
+
+      </div>
       <h4>Category: <%= @book.category.name %></h4>
       <h4>Sayfa sayısı: <%= @book.page_count %></h4>
       <h4>Bulunma Durmu: <%= @book.state %></h4>
-      <%= link_to "Geriye Dön",root_path %>
-      <%= link_to "Düzenle", edit_book_path(@book) %>
-      <%= link_to "Sil",book_path(@book), method: :delete, data:{confirm: "Emin misiniz?"}%>
+
     </div>
-    <div class="row">
-      <div class="col-md-4">
+
 
       </div>
+  <%= link_to "Geriye Dön",root_path %>
+  <%= link_to "Düzenle", edit_book_path(@book) %>
+  <%= link_to "Sil",book_path(@book), method: :delete, data:{confirm: "Emin misiniz?"}%>
+  <div class="row">
+    <div class="col-md-4">
+      <%= render @book.reviews %>
+
+      <div > <%= link_to "Add review",new_book_review_path(@book) %></div>
     </div>
   </div>
+  <script>
+    $('.review-rating').raty({
+        readOnly: true,
+        score: function(){
+            return $(this).attr('data-score');
+        },
+        path: '/assets/'
+    });
+  </script>
 
-
+<script>
+    $('.average-review-rating').raty({
+        readOnly: true,
+        path: '/assets/',
+        score: function(){
+            return $(this).attr('data-score')
+        }
+    });
+</script>
 
 </div>

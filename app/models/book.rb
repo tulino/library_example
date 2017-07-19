@@ -3,4 +3,5 @@ class Book < ApplicationRecord
   validates_attachment_content_type :book_img, content_type: /\Aimage\/.*\z/
   belongs_to :category
   has_many :deposits
+  has_many :reviews
   end

@@ -1,0 +1,6 @@
+<div class="review-rating" data-score="<%= review.rating %>"></div>
+<p><%= review.comment %></p>
+
+<%= link_to "Düzenle", edit_book_review_path(review.book,review) %>
+<%= link_to "Sil",book_review_path(review.book,review),method: :delete, data:
+    {confirm: "Emin misiniz?"} %>

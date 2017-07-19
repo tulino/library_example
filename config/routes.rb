@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   resources :deposits
   resources :users
-  resources :books
+  resources :books do
+    resources :reviews
+  end
   devise_for :admins
 
   resources :categories
