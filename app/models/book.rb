@@ -4,4 +4,4 @@ class Book < ApplicationRecord
   belongs_to :category
   has_many :deposits
   has_many :reviews
-  end
+end
