@@ -14,7 +14,6 @@ module Api
 
       end
       def create
-        return head :forbidden unless has_valid_api_key?
         book = Book.new(book_params)
         if book.save
           render json: {status: 'SUCCESS', message:'Created book', data:book},status: :ok
@@ -42,12 +41,7 @@ module Api
       def book_params
         params.require(:book).permit(:name, :page_count, :state, :author, :category_id, :book_img)
       end
-    def has_valid_api_key?
-      p request.headers['X-Api-Key'] == 'abc123'
-    end
-      def validate_api_key!
-        return head :forbidden unless has_valid_api_key?
-      end
+
     end
   end
 end
